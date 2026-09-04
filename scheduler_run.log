@@ -1,0 +1,1440 @@
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+[t=8.0s] Execute Task 1 (slack=19763802 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=13.0s] Execute Task 2 (slack=22455803 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=22455803)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=18.0s] Execute Task 3 (slack=21737454 us)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+[t=33.1s] Execute Task 1 (slack=19689769 us)
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+[t=41.1s] Execute Task 2 (slack=22371624 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=46.1s] Execute Task 3 (slack=23701456 us)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+[t=58.1s] Execute Task 1 (slack=19666921 us)
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 34.5%
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+[t=69.1s] Execute Task 2 (slack=22352787 us)
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 16.7%
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+[t=75.1s] Execute Task 3 (slack=24677632 us)
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait:  293.2ms | Util:  27.1% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.1t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:   0.0% | Wait:  606.6ms | Util:  24.3% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:   0.0% | Wait: 2441.7ms | Util:  15.8% | Preempt:  0.5 | Tardy:    0.0ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+[t=99.0s] Execute Task 1 (slack=19071748 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=19071748)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=104.0s] Execute Task 2 (slack=18587187 us)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=18587187)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=109.0s] Execute Task 3 (slack=16962686 us)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+[t=124.0s] Execute Task 1 (slack=19048551 us)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=129.0s] Execute Task 2 (slack=21567287 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=134.0s] Execute Task 3 (slack=21943317 us)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+[t=149.0s] Execute Task 1 (slack=19030379 us)
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 34.5%
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+[t=156.1s] Execute Task 2 (slack=22541725 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 16.7%
+[t=161.1s] Execute Task 3 (slack=24923460 us)
+ 🏁 [BATCH SELESAI] Task 3 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 0.0%
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait:  949.8ms | Util:  26.8% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.1t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:   0.0% | Wait: 2101.3ms | Util:  24.4% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:   0.0% | Wait: 3723.5ms | Util:  23.0% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan llf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server PURE LLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler Real-Time Periodik (PURE LLF - 1s Tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+
+ 🔔 [NOTIFIKASI] Task 1 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 2 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 3 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ 📊 [PURE LLF SENT] Batch 1 Task 1 | Miss:   0.0% | Preempt:  0.0 | Tardy:    0.0ms
+ 📊 [PURE LLF SENT] Batch 1 Task 2 | Miss:   0.0% | Preempt:  0.3 | Tardy:    0.0ms
+ 📊 [PURE LLF SENT] Batch 1 Task 3 | Miss:   0.0% | Preempt:  0.3 | Tardy:    0.0ms
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+[t=14.0s] Execute Task 1 (slack=19664655 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=19664655)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=19.0s] Execute Task 2 (slack=18334416 us)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=18334416)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=24.0s] Execute Task 3 (slack=16097785 us)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+[t=39.0s] Execute Task 1 (slack=19646696 us)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=44.0s] Execute Task 2 (slack=21316477 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=21316477)
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=49.0s] Execute Task 3 (slack=21079235 us)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+[t=64.0s] Execute Task 1 (slack=19629713 us)
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 34.5%
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+[t=71.0s] Execute Task 2 (slack=22294622 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 16.7%
+[t=76.0s] Execute Task 3 (slack=24063375 us)
+ 🏁 [BATCH SELESAI] Task 3 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 0.0%
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait:  353.0ms | Util:  27.1% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.1t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:   0.0% | Wait: 2351.5ms | Util:  24.3% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:   0.0% | Wait: 4586.5ms | Util:  22.7% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+[t=4.0s] Execute Task 1 (slack=19750953 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=19750953)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=9.0s] Execute Task 2 (slack=18800494 us)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=18800494)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=14.0s] Execute Task 3 (slack=16942516 us)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+[t=29.0s] Execute Task 1 (slack=19720758 us)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=34.0s] Execute Task 2 (slack=21770369 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=39.0s] Execute Task 3 (slack=21911469 us)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+[t=54.1s] Execute Task 1 (slack=19692097 us)
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 34.5%
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+[t=61.1s] Execute Task 2 (slack=22734604 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 16.7%
+[t=66.1s] Execute Task 3 (slack=24883445 us)
+ 🏁 [BATCH SELESAI] Task 3 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 0.0%
+
+ 🔌 [SCANNER] Terputus / tidak terbaca. Menyambung ulang...
+ ✅ [SCANNER] Tersambung kembali. Silakan ulangi scan terakhir bila perlu.
+
+ 🔌 [SCANNER] Terputus / tidak terbaca. Menyambung ulang...
+ ✅ [SCANNER] Tersambung kembali. Silakan ulangi scan terakhir bila perlu.
+
+ 🔌 [SCANNER] Terputus / tidak terbaca. Menyambung ulang...
+ ✅ [SCANNER] Tersambung kembali. Silakan ulangi scan terakhir bila perlu.
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait:  278.7ms | Util:  27.1% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.1t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:   0.0% | Wait: 1898.2ms | Util:  24.5% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:   0.0% | Wait: 3754.2ms | Util:  23.0% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+[t=18.0s] Execute Task 1 (slack=19174393 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=23.0s] Execute Task 2 (slack=20221427 us)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=20221427)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=28.0s] Execute Task 3 (slack=18852197 us)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+[t=43.0s] Execute Task 1 (slack=19150637 us)
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+[t=49.1s] Execute Task 2 (slack=22158838 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=54.1s] Execute Task 3 (slack=22794844 us)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+[t=68.1s] Execute Task 1 (slack=19067060 us)
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 34.5%
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+[t=77.1s] Execute Task 2 (slack=22107977 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 16.7%
+[t=82.1s] Execute Task 3 (slack=24746368 us)
+ 🏁 [BATCH SELESAI] Task 3 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 0.0%
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait:  869.3ms | Util:  26.8% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.1t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:   0.0% | Wait: 1503.9ms | Util:  24.2% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:   0.0% | Wait: 2868.9ms | Util:  23.0% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+[t=4.0s] Execute Task 1 (slack=19896650 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=19896650)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=9.0s] Execute Task 2 (slack=18999170 us)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=18999170)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=14.0s] Execute Task 3 (slack=17080390 us)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+[t=29.0s] Execute Task 1 (slack=19869589 us)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=34.0s] Execute Task 2 (slack=21974216 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=39.0s] Execute Task 3 (slack=22050825 us)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+[t=54.1s] Execute Task 1 (slack=19842883 us)
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 34.5%
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+[t=61.1s] Execute Task 2 (slack=22935734 us)
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 16.7%
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+[t=67.1s] Execute Task 3 (slack=23996539 us)
+ 🏁 [BATCH SELESAI] Task 3 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 0.0%
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait:  130.3ms | Util:  27.2% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.1t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:   0.0% | Wait: 1697.0ms | Util:  24.6% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:   0.0% | Wait: 3957.4ms | Util:  22.7% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+[t=35.0s] Execute Task 1 (slack=19580101 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=19580101)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=40.0s] Execute Task 2 (slack=18550774 us)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=18550774)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=45.0s] Execute Task 3 (slack=16766264 us)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+[t=60.0s] Execute Task 1 (slack=19555075 us)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=65.0s] Execute Task 2 (slack=21525750 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=70.0s] Execute Task 3 (slack=21739915 us)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+[t=85.1s] Execute Task 1 (slack=19531120 us)
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 34.5%
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+[t=92.1s] Execute Task 2 (slack=22489120 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 16.7%
+[t=97.1s] Execute Task 3 (slack=24710831 us)
+ 🏁 [BATCH SELESAI] Task 3 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 0.0%
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait:  444.6ms | Util:  27.0% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.1t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:   0.0% | Wait: 2144.8ms | Util:  24.4% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:   0.0% | Wait: 3927.7ms | Util:  23.0% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+[t=10.0s] Execute Task 1 (slack=19706565 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=19706565)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=15.0s] Execute Task 2 (slack=18708335 us)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=18708335)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=20.0s] Execute Task 3 (slack=16764494 us)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+[t=35.1s] Execute Task 1 (slack=19617963 us)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=40.1s] Execute Task 2 (slack=21616011 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=45.1s] Execute Task 3 (slack=21688539 us)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+[t=60.1s] Execute Task 1 (slack=19591746 us)
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 34.5%
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+[t=67.1s] Execute Task 2 (slack=22586936 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 16.7%
+[t=72.1s] Execute Task 3 (slack=24666353 us)
+ 🏁 [BATCH SELESAI] Task 3 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 0.0%
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait:  361.2ms | Util:  27.1% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.1t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:   0.0% | Wait: 2029.6ms | Util:  24.4% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:   0.0% | Wait: 3960.2ms | Util:  23.0% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+[t=31.0s] Execute Task 1 (slack=19614377 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 70.1%
+    -> Task 4 Masuk (C: 5s, P: 32s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=19614377)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 84.4%
+    -> Task 5 Masuk (C: 5s, P: 35s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 97.6%
+    -> Task 6 Masuk (C: 5s, P: 38s, Target: 3 Siklus)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=36.0s] Execute Task 2 (slack=18304262 us)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 110.1%
+    -> Task 7 Masuk (C: 5s, P: 40s, Target: 3 Siklus)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 122.0%
+    -> Task 8 Masuk (C: 5s, P: 42s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=18304262)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=41.1s] Execute Task 3 (slack=16538558 us)
+   🛡️  [SHIELD] Task 4 di-exclude (tied dgn Task 3, slack=16538558)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=46.1s] Execute Task 4 (slack=14239669 us)
+   🛡️  [SHIELD] Task 5 di-exclude (tied dgn Task 4, slack=14239669)
+   ✓ [Task 4] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=51.1s] Execute Task 5 (slack=13315378 us)
+   🛡️  [SHIELD] Task 6 di-exclude (tied dgn Task 5, slack=13315378)
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+   ✓ [Task 5] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=56.1s] Execute Task 6 (slack=12249666 us)
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 6, slack=12249666)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+   ✓ [Task 6] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=61.1s] Execute Task 7 (slack=10212665 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   🛡️  [SHIELD] Task 8 di-exclude (tied dgn Task 7, slack=10212665)
+   🛡️  [SHIELD] Task 1 di-exclude (tied dgn Task 7, slack=10212665)
+
+ 🔄 [PERIODIC] Task 4 mulai Siklus 2/3!
+   ✓ [Task 7] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=66.1s] Execute Task 8 (slack=7848248 us)
+   🛡️  [SHIELD] Task 1 di-exclude (tied dgn Task 8, slack=7848248)
+
+ 🔄 [PERIODIC] Task 5 mulai Siklus 2/3!
+   ✓ [Task 8] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=71.1s] Execute Task 1 (slack=4507169 us)
+
+ 🔄 [PERIODIC] Task 6 mulai Siklus 2/3!
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=76.1s] Execute Task 2 (slack=6189375 us)
+
+ 🔄 [PERIODIC] Task 7 mulai Siklus 2/3!
+
+ 🔄 [PERIODIC] Task 8 mulai Siklus 2/3!
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=81.1s] Execute Task 3 (slack=6470500 us)
+   🛡️  [SHIELD] Task 4 di-exclude (tied dgn Task 3, slack=6470500)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=86.1s] Execute Task 4 (slack=6175886 us)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+   ✓ [Task 4] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=91.1s] Execute Task 5 (slack=8255301 us)
+   🛡️  [SHIELD] Task 1 di-exclude (tied dgn Task 5, slack=8255301)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+   ✓ [Task 5] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=96.1s] Execute Task 1 (slack=4476173 us)
+
+ 🔄 [PERIODIC] Task 4 mulai Siklus 3/3!
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 102.0%
+[t=101.1s] Execute Task 6 (slack=5188326 us)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 6, slack=5188326)
+
+ 🔄 [PERIODIC] Task 5 mulai Siklus 3/3!
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 6, slack=5188326)
+   ✓ [Task 6] Siklus 2 selesai. Menunggu periode berikutnya.
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 2, slack=4153837)
+[t=106.2s] Execute Task 2 (slack=4153837 us)
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 84.1%
+[t=111.2s] Execute Task 7 (slack=146367 us)
+
+ 🔄 [PERIODIC] Task 6 mulai Siklus 3/3!
+   🛡️  [SHIELD] Task 8 di-exclude (tied dgn Task 7, slack=146367)
+   ✓ [Task 7] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=116.2s] Execute Task 8 (slack=-215400 us)
+
+ 🔄 [PERIODIC] Task 7 mulai Siklus 3/3!
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 8, slack=-215400)
+ ⚠️ [ALARM] Task 8 MISSED DEADLINE (Tardy: 220.5 ms)!
+   ✓ [Task 8] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=121.2s] Execute Task 3 (slack=-3573817 us)
+
+ 🔄 [PERIODIC] Task 8 mulai Siklus 3/3!
+ ⚠️ [ALARM] Task 3 MISSED DEADLINE (Tardy: 3578.7 ms)!
+ 🏁 [BATCH SELESAI] Task 3 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 67.5%
+[t=126.2s] Execute Task 4 (slack=-1868697 us)
+ ⚠️ [ALARM] Task 4 MISSED DEADLINE (Tardy: 1874.3 ms)!
+ 🏁 [BATCH SELESAI] Task 4 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 51.8%
+[t=131.2s] Execute Task 5 (slack=3210691 us)
+ 🏁 [BATCH SELESAI] Task 5 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 37.6%
+[t=136.2s] Execute Task 6 (slack=8148154 us)
+ 🏁 [BATCH SELESAI] Task 6 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 24.4%
+[t=141.2s] Execute Task 7 (slack=10115173 us)
+ 🏁 [BATCH SELESAI] Task 7 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 11.9%
+[t=146.2s] Execute Task 8 (slack=11753665 us)
+ 🏁 [BATCH SELESAI] Task 8 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 0.0%
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait: 10467.4ms | Util:  21.3% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:   0.0% | Wait: 13450.8ms | Util:  18.8% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:  33.3% | Wait: 18521.6ms | Util:  16.0% | Preempt:  0.0 | Tardy: 1192.9ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 4 | Miss:  33.3% | Wait: 20817.7ms | Util:  15.3% | Preempt:  0.0 | Tardy:  624.8ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 5 | Miss:   0.0% | Wait: 21739.5ms | Util:  14.7% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 6 | Miss:   0.0% | Wait: 24471.3ms | Util:  14.2% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 7 | Miss:   0.0% | Wait: 28175.3ms | Util:  13.7% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 8 | Miss:  33.3% | Wait: 30537.8ms | Util:  13.1% | Preempt:  0.0 | Tardy:   73.5ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan llf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server PURE LLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler Real-Time Periodik (PURE LLF - 1s Tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 70.1%
+    -> Task 4 Masuk (C: 5s, P: 32s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 84.4%
+    -> Task 5 Masuk (C: 5s, P: 35s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 97.6%
+    -> Task 6 Masuk (C: 5s, P: 38s, Target: 3 Siklus)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 110.1%
+    -> Task 7 Masuk (C: 5s, P: 40s, Target: 3 Siklus)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 122.0%
+    -> Task 8 Masuk (C: 5s, P: 42s, Target: 3 Siklus)
+
+ 🔔 [NOTIFIKASI] Task 1 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 2 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 3 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 4 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 5 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 6 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 7 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 8 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ 📊 [PURE LLF SENT] Batch 1 Task 1 | Miss:   0.0% | Preempt:  2.7 | Tardy:    0.0ms
+ 📊 [PURE LLF SENT] Batch 1 Task 2 | Miss:   0.0% | Preempt:  1.7 | Tardy:    0.0ms
+ 📊 [PURE LLF SENT] Batch 1 Task 3 | Miss:  33.3% | Preempt:  2.0 | Tardy: 1113.8ms
+ 📊 [PURE LLF SENT] Batch 1 Task 4 | Miss:  33.3% | Preempt:  0.3 | Tardy:  414.5ms
+ 📊 [PURE LLF SENT] Batch 1 Task 5 | Miss:   0.0% | Preempt:  1.3 | Tardy:    0.0ms
+ 📊 [PURE LLF SENT] Batch 1 Task 6 | Miss:   0.0% | Preempt:  0.7 | Tardy:    0.0ms
+ 📊 [PURE LLF SENT] Batch 1 Task 7 | Miss:   0.0% | Preempt:  2.0 | Tardy:    0.0ms
+ 📊 [PURE LLF SENT] Batch 1 Task 8 | Miss:  33.3% | Preempt:  2.7 | Tardy:  938.8ms
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+[t=11.0s] Execute Task 1 (slack=19489659 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 70.1%
+    -> Task 4 Masuk (C: 5s, P: 32s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=19489659)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 84.4%
+    -> Task 5 Masuk (C: 5s, P: 35s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 97.6%
+    -> Task 6 Masuk (C: 5s, P: 38s, Target: 3 Siklus)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=16.0s] Execute Task 2 (slack=18169359 us)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 110.1%
+    -> Task 7 Masuk (C: 5s, P: 40s, Target: 3 Siklus)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 122.0%
+    -> Task 8 Masuk (C: 5s, P: 42s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=18169359)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=21.0s] Execute Task 3 (slack=16250077 us)
+   🛡️  [SHIELD] Task 4 di-exclude (tied dgn Task 3, slack=16250077)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=26.0s] Execute Task 4 (slack=14286231 us)
+   🛡️  [SHIELD] Task 5 di-exclude (tied dgn Task 4, slack=14286231)
+   ✓ [Task 4] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=31.0s] Execute Task 5 (slack=13346503 us)
+   🛡️  [SHIELD] Task 6 di-exclude (tied dgn Task 5, slack=13346503)
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+   ✓ [Task 5] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=36.0s] Execute Task 6 (slack=12401420 us)
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 6, slack=12401420)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+   ✓ [Task 6] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=41.0s] Execute Task 7 (slack=10503841 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   🛡️  [SHIELD] Task 1 di-exclude (tied dgn Task 7, slack=10503841)
+   🛡️  [SHIELD] Task 8 di-exclude (tied dgn Task 7, slack=10503841)
+
+ 🔄 [PERIODIC] Task 4 mulai Siklus 2/3!
+   ✓ [Task 7] Siklus 1 selesai. Menunggu periode berikutnya.
+   🛡️  [SHIELD] Task 1 di-exclude (tied dgn Task 8, slack=8646551)
+[t=46.0s] Execute Task 8 (slack=8646551 us)
+
+ 🔄 [PERIODIC] Task 5 mulai Siklus 2/3!
+   ✓ [Task 8] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=51.0s] Execute Task 1 (slack=4449129 us)
+
+ 🔄 [PERIODIC] Task 6 mulai Siklus 2/3!
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=56.0s] Execute Task 2 (slack=6123951 us)
+
+ 🔄 [PERIODIC] Task 7 mulai Siklus 2/3!
+
+ 🔄 [PERIODIC] Task 8 mulai Siklus 2/3!
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=61.1s] Execute Task 3 (slack=6204948 us)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=66.1s] Execute Task 4 (slack=6241041 us)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+   ✓ [Task 4] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=71.1s] Execute Task 5 (slack=8301204 us)
+   🛡️  [SHIELD] Task 1 di-exclude (tied dgn Task 5, slack=8301204)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+   ✓ [Task 5] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=76.1s] Execute Task 1 (slack=4423827 us)
+
+ 🔄 [PERIODIC] Task 4 mulai Siklus 3/3!
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 102.0%
+[t=81.1s] Execute Task 6 (slack=5353896 us)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 6, slack=5353896)
+
+ 🔄 [PERIODIC] Task 5 mulai Siklus 3/3!
+   ✓ [Task 6] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=86.1s] Execute Task 2 (slack=4093629 us)
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 2, slack=4093629)
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 84.1%
+[t=91.1s] Execute Task 7 (slack=451043 us)
+
+ 🔄 [PERIODIC] Task 6 mulai Siklus 3/3!
+   ✓ [Task 7] Siklus 2 selesai. Menunggu periode berikutnya.
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 8, slack=593855)
+[t=96.1s] Execute Task 8 (slack=593855 us)
+
+ 🔄 [PERIODIC] Task 7 mulai Siklus 3/3!
+   ✓ [Task 8] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=101.1s] Execute Task 3 (slack=-3837283 us)
+
+ 🔄 [PERIODIC] Task 8 mulai Siklus 3/3!
+ ⚠️ [ALARM] Task 3 MISSED DEADLINE (Tardy: 3842.6 ms)!
+ 🏁 [BATCH SELESAI] Task 3 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 67.5%
+[t=106.1s] Execute Task 4 (slack=-1801589 us)
+ ⚠️ [ALARM] Task 4 MISSED DEADLINE (Tardy: 1806.8 ms)!
+ 🏁 [BATCH SELESAI] Task 4 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 51.8%
+[t=111.1s] Execute Task 5 (slack=3258249 us)
+ 🏁 [BATCH SELESAI] Task 5 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 37.6%
+[t=116.1s] Execute Task 6 (slack=8315906 us)
+ 🏁 [BATCH SELESAI] Task 6 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 24.4%
+[t=121.1s] Execute Task 7 (slack=10420598 us)
+ 🏁 [BATCH SELESAI] Task 7 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 11.9%
+[t=126.1s] Execute Task 8 (slack=12562946 us)
+ 🏁 [BATCH SELESAI] Task 8 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 0.0%
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait: 10545.8ms | Util:  21.3% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:   0.0% | Wait: 13537.7ms | Util:  18.8% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:  33.3% | Wait: 18794.1ms | Util:  16.0% | Preempt:  0.0 | Tardy: 1280.9ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 4 | Miss:  33.3% | Wait: 20758.1ms | Util:  15.3% | Preempt:  0.0 | Tardy:  602.3ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 5 | Miss:   0.0% | Wait: 21698.0ms | Util:  14.7% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 6 | Miss:   0.0% | Wait: 24309.6ms | Util:  14.2% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 7 | Miss:   0.0% | Wait: 27874.8ms | Util:  13.7% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 8 | Miss:   0.0% | Wait: 29732.2ms | Util:  13.2% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 40.0%
+    -> Task 2 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=19247828)
+[t=5.0s] Execute Task 1 (slack=19247828 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 57.9%
+    -> Task 3 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 74.5%
+    -> Task 4 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 88.8%
+    -> Task 5 Masuk (C: 5s, P: 35s, Target: 3 Siklus)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 102.0%
+    -> Task 6 Masuk (C: 5s, P: 38s, Target: 3 Siklus)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 115.1%
+    -> Task 7 Masuk (C: 5s, P: 38s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 1, slack=19247828)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 127.6%
+    -> Task 8 Masuk (C: 5s, P: 40s, Target: 3 Siklus)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=10.0s] Execute Task 2 (slack=14776519 us)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=14776519)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=15.0s] Execute Task 3 (slack=13398472 us)
+   🛡️  [SHIELD] Task 4 di-exclude (tied dgn Task 3, slack=13398472)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=20.1s] Execute Task 4 (slack=11055945 us)
+   ✓ [Task 4] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=25.1s] Execute Task 5 (slack=12191641 us)
+   🛡️  [SHIELD] Task 6 di-exclude (tied dgn Task 5, slack=12191641)
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 5, slack=12191641)
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+   ✓ [Task 5] Siklus 1 selesai. Menunggu periode berikutnya.
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 6, slack=10762942)
+[t=30.1s] Execute Task 6 (slack=10762942 us)
+   🛡️  [SHIELD] Task 8 di-exclude (tied dgn Task 6, slack=10762942)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   ✓ [Task 6] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=35.1s] Execute Task 7 (slack=6380372 us)
+
+ 🔄 [PERIODIC] Task 4 mulai Siklus 2/3!
+   🛡️  [SHIELD] Task 8 di-exclude (tied dgn Task 7, slack=6380372)
+   ✓ [Task 7] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=40.1s] Execute Task 8 (slack=4558594 us)
+
+ 🔄 [PERIODIC] Task 5 mulai Siklus 2/3!
+   🛡️  [SHIELD] Task 1 di-exclude (tied dgn Task 8, slack=4558594)
+   ✓ [Task 8] Siklus 1 selesai. Menunggu periode berikutnya.
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=4147704)
+[t=45.1s] Execute Task 1 (slack=4147704 us)
+
+ 🔄 [PERIODIC] Task 6 mulai Siklus 2/3!
+
+ 🔄 [PERIODIC] Task 7 mulai Siklus 2/3!
+
+ 🔄 [PERIODIC] Task 8 mulai Siklus 2/3!
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=50.1s] Execute Task 2 (slack=-329476 us)
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+ ⚠️ [ALARM] Task 2 MISSED DEADLINE (Tardy: 334.7 ms)!
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=55.1s] Execute Task 3 (slack=1326274 us)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+   🛡️  [SHIELD] Task 4 di-exclude (tied dgn Task 3, slack=1326274)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=60.1s] Execute Task 4 (slack=991107 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+   ✓ [Task 4] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=65.1s] Execute Task 5 (slack=7133793 us)
+
+ 🔄 [PERIODIC] Task 4 mulai Siklus 3/3!
+   🛡️  [SHIELD] Task 1 di-exclude (tied dgn Task 5, slack=7133793)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 5, slack=7133793)
+   ✓ [Task 5] Siklus 2 selesai. Menunggu periode berikutnya.
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=4117907)
+[t=70.1s] Execute Task 1 (slack=4117907 us)
+   🛡️  [SHIELD] Task 6 di-exclude (tied dgn Task 1, slack=4117907)
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 107.6%
+[t=75.1s] Execute Task 2 (slack=-358651 us)
+
+ 🔄 [PERIODIC] Task 5 mulai Siklus 3/3!
+   🛡️  [SHIELD] Task 6 di-exclude (tied dgn Task 2, slack=-358651)
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 2, slack=-358651)
+ ⚠️ [ALARM] Task 2 MISSED DEADLINE (Tardy: 363.6 ms)!
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 87.6%
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 6, slack=-1299030)
+[t=80.1s] Execute Task 6 (slack=-1299030 us)
+ ⚠️ [ALARM] Task 6 MISSED DEADLINE (Tardy: 1303.8 ms)!
+   ✓ [Task 6] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=85.1s] Execute Task 7 (slack=-5679534 us)
+
+ 🔄 [PERIODIC] Task 6 mulai Siklus 3/3!
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 7, slack=-5679534)
+ ⚠️ [ALARM] Task 7 MISSED DEADLINE (Tardy: 5686.0 ms)!
+   ✓ [Task 7] Siklus 2 selesai. Menunggu periode berikutnya.
+   🛡️  [SHIELD] Task 8 di-exclude (tied dgn Task 3, slack=-5713868)
+[t=90.2s] Execute Task 3 (slack=-5713868 us)
+
+ 🔄 [PERIODIC] Task 7 mulai Siklus 3/3!
+ ⚠️ [ALARM] Task 3 MISSED DEADLINE (Tardy: 5719.0 ms)!
+ 🏁 [BATCH SELESAI] Task 3 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 69.8%
+[t=95.2s] Execute Task 8 (slack=-10506521 us)
+ ⚠️ [ALARM] Task 8 MISSED DEADLINE (Tardy: 10511.3 ms)!
+   ✓ [Task 8] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=100.2s] Execute Task 4 (slack=-9053715 us)
+
+ 🔄 [PERIODIC] Task 8 mulai Siklus 3/3!
+ ⚠️ [ALARM] Task 4 MISSED DEADLINE (Tardy: 9058.7 ms)!
+ 🏁 [BATCH SELESAI] Task 4 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 53.1%
+[t=105.2s] Execute Task 5 (slack=2091293 us)
+ 🏁 [BATCH SELESAI] Task 5 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 38.8%
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 6, slack=6659249)
+[t=110.2s] Execute Task 6 (slack=6659249 us)
+ 🏁 [BATCH SELESAI] Task 6 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 25.7%
+[t=115.2s] Execute Task 7 (slack=2278375 us)
+ 🏁 [BATCH SELESAI] Task 7 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 12.5%
+[t=120.2s] Execute Task 8 (slack=4458400 us)
+ 🏁 [BATCH SELESAI] Task 8 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 0.0%
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait: 10828.9ms | Util:  21.2% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:  66.7% | Wait: 15303.9ms | Util:  19.9% | Preempt:  0.0 | Tardy:  232.8ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:  33.3% | Wait: 19996.4ms | Util:  16.7% | Preempt:  0.0 | Tardy: 1906.3ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 4 | Miss:  33.3% | Wait: 24002.2ms | Util:  15.1% | Preempt:  0.0 | Tardy: 3019.6ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 5 | Miss:   0.0% | Wait: 22861.1ms | Util:  14.6% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 6 | Miss:  33.3% | Wait: 27625.6ms | Util:  14.0% | Preempt:  0.0 | Tardy:  434.6ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 7 | Miss:  33.3% | Wait: 32006.9ms | Util:  13.4% | Preempt:  0.0 | Tardy: 1895.3ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 8 | Miss:  33.3% | Wait: 35496.5ms | Util:  13.0% | Preempt:  0.0 | Tardy: 3503.8ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan llf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server PURE LLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler Real-Time Periodik (PURE LLF - 1s Tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 70.1%
+    -> Task 4 Masuk (C: 5s, P: 32s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 84.4%
+    -> Task 5 Masuk (C: 5s, P: 35s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 98.7%
+    -> Task 6 Masuk (C: 5s, P: 35s, Target: 3 Siklus)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 111.9%
+    -> Task 7 Masuk (C: 5s, P: 38s, Target: 3 Siklus)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 124.4%
+    -> Task 8 Masuk (C: 5s, P: 40s, Target: 3 Siklus)
+
+ 🔔 [NOTIFIKASI] Task 1 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 2 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 3 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 4 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 5 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 6 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 7 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+ 🔔 [NOTIFIKASI] Task 8 telah menyelesaikan 3 siklus penuh (SELESAI)!
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ 📊 [PURE LLF SENT] Batch 1 Task 1 | Miss:  33.3% | Preempt:  1.0 | Tardy:  124.4ms
+ 📊 [PURE LLF SENT] Batch 1 Task 2 | Miss:  33.3% | Preempt:  2.3 | Tardy: 1679.7ms
+ 📊 [PURE LLF SENT] Batch 1 Task 3 | Miss:  33.3% | Preempt:  1.3 | Tardy: 1478.0ms
+ 📊 [PURE LLF SENT] Batch 1 Task 4 | Miss:  33.3% | Preempt:  1.0 | Tardy:  954.4ms
+ 📊 [PURE LLF SENT] Batch 1 Task 5 | Miss:  33.3% | Preempt:  4.0 | Tardy:  724.5ms
+ 📊 [PURE LLF SENT] Batch 1 Task 6 | Miss:  33.3% | Preempt:  4.0 | Tardy:  860.9ms
+ 📊 [PURE LLF SENT] Batch 1 Task 7 | Miss:   0.0% | Preempt:  0.7 | Tardy:    0.0ms
+ 📊 [PURE LLF SENT] Batch 1 Task 8 | Miss:  33.3% | Preempt:  2.0 | Tardy: 1819.1ms
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.
+ ▶️  Menjalankan ellf (Ctrl+C untuk berhenti) ...
+ 🔗 InfluxDB target: http://localhost:8086/api/v2/write?org=polman&bucket=TA2026&precision=us
+ ✅ [INFLUXDB] Koneksi OK. Siap mengirim data.
+===================================================
+ Edge Server ELLF Batch Production (1s Tick) Aktif.
+ Format QR Scan : [C] [D] [P]  ATAU  [C] [D] [P] [Loop]
+ Scan 0 0 0     : AKHIRI BATCH (kirim metrik + reset ke Task 1)
+ Ctrl+C         : MATIKAN program sepenuhnya
+===================================================
+
+========== BATCH 1 AKTIF — silakan scan task (mulai Task 1) ==========
+[Job Floor] Scheduler ELLF (paper-compliant, 1s tick) Started...
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 20.0%
+    -> Task 1 Masuk (C: 5s, P: 25s, Target: 3 Siklus)
+[t=7.0s] Execute Task 1 (slack=19763354 us)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 37.9%
+    -> Task 2 Masuk (C: 5s, P: 28s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 54.5%
+    -> Task 3 Masuk (C: 5s, P: 30s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 70.1%
+    -> Task 4 Masuk (C: 5s, P: 32s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 84.4%
+    -> Task 5 Masuk (C: 5s, P: 35s, Target: 3 Siklus)
+
+ ✅ [KAPASITAS AMAN] Total Beban Naik Mjd: 97.6%
+    -> Task 6 Masuk (C: 5s, P: 38s, Target: 3 Siklus)
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 1, slack=19763354)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 110.1%
+    -> Task 7 Masuk (C: 5s, P: 40s, Target: 3 Siklus)
+
+ ⚠️ [WARNING] Overload Terdeteksi! Kapasitas: 122.0%
+    -> Task 8 Masuk (C: 5s, P: 42s, Target: 3 Siklus)
+   ✓ [Task 1] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=12.0s] Execute Task 2 (slack=18173858 us)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=18173858)
+   ✓ [Task 2] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=17.0s] Execute Task 3 (slack=15698890 us)
+   🛡️  [SHIELD] Task 4 di-exclude (tied dgn Task 3, slack=15698890)
+   ✓ [Task 3] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=22.0s] Execute Task 4 (slack=13172924 us)
+   🛡️  [SHIELD] Task 5 di-exclude (tied dgn Task 4, slack=13172924)
+   ✓ [Task 4] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=27.0s] Execute Task 5 (slack=11742504 us)
+   🛡️  [SHIELD] Task 6 di-exclude (tied dgn Task 5, slack=11742504)
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 2/3!
+   ✓ [Task 5] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=32.0s] Execute Task 6 (slack=10197518 us)
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 6, slack=10197518)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 2/3!
+   ✓ [Task 6] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=37.0s] Execute Task 7 (slack=8156280 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 2/3!
+   🛡️  [SHIELD] Task 8 di-exclude (tied dgn Task 7, slack=8156280)
+
+ 🔄 [PERIODIC] Task 4 mulai Siklus 2/3!
+   ✓ [Task 7] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=42.0s] Execute Task 8 (slack=5679536 us)
+
+ 🔄 [PERIODIC] Task 5 mulai Siklus 2/3!
+   🛡️  [SHIELD] Task 1 di-exclude (tied dgn Task 8, slack=5679536)
+   ✓ [Task 8] Siklus 1 selesai. Menunggu periode berikutnya.
+[t=47.0s] Execute Task 1 (slack=4720702 us)
+
+ 🔄 [PERIODIC] Task 6 mulai Siklus 2/3!
+
+ 🔄 [PERIODIC] Task 7 mulai Siklus 2/3!
+   ✓ [Task 1] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=52.0s] Execute Task 2 (slack=6126274 us)
+
+ 🔄 [PERIODIC] Task 8 mulai Siklus 2/3!
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 2, slack=6126274)
+
+ 🔄 [PERIODIC] Task 1 mulai Siklus 3/3!
+   ✓ [Task 2] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=57.1s] Execute Task 3 (slack=5650105 us)
+   🛡️  [SHIELD] Task 4 di-exclude (tied dgn Task 3, slack=5650105)
+   ✓ [Task 3] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=62.1s] Execute Task 4 (slack=5119901 us)
+
+ 🔄 [PERIODIC] Task 2 mulai Siklus 3/3!
+   ✓ [Task 4] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=67.1s] Execute Task 5 (slack=6695120 us)
+
+ 🔄 [PERIODIC] Task 3 mulai Siklus 3/3!
+   🛡️  [SHIELD] Task 1 di-exclude (tied dgn Task 5, slack=6695120)
+   ✓ [Task 5] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=72.1s] Execute Task 1 (slack=4689660 us)
+
+ 🔄 [PERIODIC] Task 4 mulai Siklus 3/3!
+   🛡️  [SHIELD] Task 6 di-exclude (tied dgn Task 1, slack=4689660)
+ 🏁 [BATCH SELESAI] Task 1 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 102.0%
+[t=77.1s] Execute Task 6 (slack=3143740 us)
+
+ 🔄 [PERIODIC] Task 5 mulai Siklus 3/3!
+   🛡️  [SHIELD] Task 7 di-exclude (tied dgn Task 6, slack=3143740)
+   ✓ [Task 6] Siklus 2 selesai. Menunggu periode berikutnya.
+   🛡️  [SHIELD] Task 2 di-exclude (tied dgn Task 7, slack=3100595)
+[t=82.1s] Execute Task 7 (slack=3100595 us)
+
+ 🔄 [PERIODIC] Task 6 mulai Siklus 3/3!
+   🛡️  [SHIELD] Task 8 di-exclude (tied dgn Task 7, slack=3100595)
+   ✓ [Task 7] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=87.1s] Execute Task 2 (slack=-919423 us)
+   🛡️  [SHIELD] Task 8 di-exclude (tied dgn Task 2, slack=-919423)
+
+ 🔄 [PERIODIC] Task 7 mulai Siklus 3/3!
+ ⚠️ [ALARM] Task 2 MISSED DEADLINE (Tardy: 924.4 ms)!
+ 🏁 [BATCH SELESAI] Task 2 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 84.1%
+[t=92.1s] Execute Task 8 (slack=-2381360 us)
+   🛡️  [SHIELD] Task 3 di-exclude (tied dgn Task 8, slack=-2381360)
+ ⚠️ [ALARM] Task 8 MISSED DEADLINE (Tardy: 2386.9 ms)!
+   ✓ [Task 8] Siklus 2 selesai. Menunggu periode berikutnya.
+[t=97.1s] Execute Task 3 (slack=-4400157 us)
+
+ 🔄 [PERIODIC] Task 8 mulai Siklus 3/3!
+ ⚠️ [ALARM] Task 3 MISSED DEADLINE (Tardy: 4405.5 ms)!
+ 🏁 [BATCH SELESAI] Task 3 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 67.5%
+[t=102.1s] Execute Task 4 (slack=-2925727 us)
+ ⚠️ [ALARM] Task 4 MISSED DEADLINE (Tardy: 2931.1 ms)!
+ 🏁 [BATCH SELESAI] Task 4 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 51.8%
+[t=107.1s] Execute Task 5 (slack=1648844 us)
+ 🏁 [BATCH SELESAI] Task 5 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 37.6%
+[t=112.1s] Execute Task 6 (slack=6102914 us)
+ 🏁 [BATCH SELESAI] Task 6 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 24.4%
+[t=117.1s] Execute Task 7 (slack=8062277 us)
+ 🏁 [BATCH SELESAI] Task 7 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 11.9%
+[t=122.1s] Execute Task 8 (slack=9582238 us)
+ 🏁 [BATCH SELESAI] Task 8 telah menyelesaikan 3 siklus penuh.
+ 📉 [KAPASITAS KOSONG] Beban dilepaskan. Beban sistem saat ini: 0.0%
+
+
+ 🛑 [SISTEM] Ctrl+C terdeteksi — mengirim metrik batch ini lalu mematikan program...
+
+ [SISTEM] Mengirim metrik final Batch 1 ke InfluxDB...
+ ✅ [SENT] Batch 1 Task 1 | Miss:   0.0% | Wait: 10275.4ms | Util:  21.3% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 2 | Miss:  33.3% | Wait: 15206.4ms | Util:  17.7% | Preempt:  0.0 | Tardy:  308.1ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 3 | Miss:  33.3% | Wait: 19350.4ms | Util:  15.9% | Preempt:  0.0 | Tardy: 1468.5ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 4 | Miss:  33.3% | Wait: 21877.6ms | Util:  15.2% | Preempt:  0.0 | Tardy:  977.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 5 | Miss:   0.0% | Wait: 23304.5ms | Util:  14.5% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 6 | Miss:   0.0% | Wait: 26518.6ms | Util:  13.9% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 7 | Miss:   0.0% | Wait: 28560.3ms | Util:  13.4% | Preempt:  0.0 | Tardy:    0.0ms | Thr:  0.0t/s
+ ✅ [SENT] Batch 1 Task 8 | Miss:  33.3% | Wait: 32706.5ms | Util:  12.9% | Preempt:  0.0 | Tardy:  795.6ms | Thr:  0.0t/s
+
+ ===================================================
+ SISTEM OFFLINE. Program dimatikan.

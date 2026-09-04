@@ -1,0 +1,13 @@
+[Unit]
+Description=Control backend Start/Stop scheduler ELLF-LLF (TA Avila)
+After=network.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/apingTA/ELLFCODEFIX
+ExecStart=/home/pi/apingTA/ELLFCODEFIX/venv/bin/python /home/pi/apingTA/ELLFCODEFIX/control_server.py
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
